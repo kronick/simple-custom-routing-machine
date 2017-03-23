@@ -1,0 +1,28 @@
+{
+  "name": "simple-custom-routing-machine",
+  "version": "0.1.0",
+  "description": "Build turn-by-turn directions on a network of custom paths with seamless handoffs to the global road network and the Mapbox Directions API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "watchify index.js -t babelify -o dist/scrm.js --verbose",
+    "build": "browserify index.js -t babelify --verbose > dist/scrm.js"
+  },
+  "dependencies": {
+    "@turf/turf": "*",
+    "request": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kronick/simple-custom-routing-machine.git"
+  },
+  "author": "Sam Kronick <sam@samkronick.com> (http://samkronick.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kronick/simple-custom-routing-machine/issues"
+  },
+  "homepage": "https://github.com/kronick/simple-custom-routing-machine#readme",
+  "devDependencies": {
+    "babelify": "^7.3.0"
+  }
+}
