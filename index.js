@@ -22,6 +22,10 @@ function SimpleCustomRoutingMachine(network, options) {
     if(this.options.entrances === undefined) this.options.entrances = [];
     if(this.options.mapboxAccessToken === undefined) this.options.mapboxAccessToken = "";
 
+    this.options.entrances = this.options.entrances.slice().forEach(e => {
+      e.enterManeuver.location = e.coordinates.slice();
+      e.exitManeuver.location = e.coordinates.slice();
+    });
 }
 
 SimpleCustomRoutingMachine.prototype = {
