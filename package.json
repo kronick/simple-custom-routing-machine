@@ -1,6 +1,6 @@
 {
   "name": "simple-custom-routing-machine",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Build turn-by-turn directions on a network of custom paths with seamless handoffs to the global road network and the Mapbox Directions API",
   "main": "index.js",
   "scripts": {
