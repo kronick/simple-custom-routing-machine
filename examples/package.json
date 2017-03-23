@@ -1,0 +1,22 @@
+{
+  "name": "scrm-example",
+  "version": "0.1.0",
+  "description": "Example to show usage of `simple-custom-routing-machine`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "watchify index.js -t babelify -o bundle.js --verbose",
+    "build": "browserify index.js -t babelify --verbose > bundle.js"
+  },
+  "dependencies": {
+    "simple-custom-routing-machine": "*",
+    "geojson-network-parser": "*",
+    "mapbox": "*",
+    "jquery-browserify": "*"
+  },
+  "author": "Sam Kronick <sam@samkronick.com> (http://samkronick.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "^7.3.0"
+  }
+}

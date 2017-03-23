@@ -6,6 +6,8 @@
 
 ## Usage
 
+_*For a sample application, see the 'examples' directory. You will need to provide your own Mapbox API token.*_
+
 First, build a routable network of roads/paths using [geojson-network-parser](https://github.com/kronick/geojson-network-parser).
 
 ```

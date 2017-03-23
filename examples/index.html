@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Custom Directions</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    
+
+    <link href="https://api.mapbox.com/mapbox-assembly/v0.12.0/assembly.min.css" rel="stylesheet">
+    <script async defer src="https://api.mapbox.com/mapbox-assembly/v0.12.0/assembly.js"></script>
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.31.0/mapbox-gl.css' rel='stylesheet' />
+    
+    <link href='style.css' rel='stylesheet' />
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <script src='bundle.js'></script>
+</head>
+
+<body>
+
+<div id="container" class="container">
+    <div id='ui' class='sidebar color-blue txt-bold bg-white p12'>
+
+        <p class="header txt-bold txt-xl">
+        Custom Directions
+        </p>
+        <hr class='txt-hr h1 mt6 mb12' />
+        <p class="txt-bold txt-m directions" id="directions">
+
+        </p>
+    </div>
+
+    <div id='map-container' class='map bg-darken10 mapboxgl-map'>
+        <div className='absolute bottom left z1 px12 z1'>
+            <a href='https://mapbox.com/about/maps/' className='mb-attribution' title='Mapbox' target='_blank'></a>
+        </div>
+    </div>
+</div>
+</body>
